@@ -7,7 +7,7 @@ function handleDeviceChange(e){
         const reference=document.querySelector('.user-pfp');
         reference.parentNode.insertBefore(popout,reference);
         const user=document.getElementById('user');
-        shareButton.addEventListener('click',(event)=>{
+        shareButton.addEventListener('click',()=>{
             const userElements=document.querySelectorAll('.active');
             popout.classList.toggle('hidden');
             userElements.forEach((element)=>{
@@ -31,7 +31,7 @@ function handleDeviceChange(e){
     }
 
 }
-let mediaQuery=window.matchMedia('(max-width:64rem)');
+const mediaQuery=window.matchMedia('(max-width:64rem)');
 handleDeviceChange(mediaQuery);
 mediaQuery.addEventListener("change",function(){
     handleDeviceChange(mediaQuery)
