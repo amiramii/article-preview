@@ -21,7 +21,7 @@ function handleDeviceChange(e){
     }else{
         popout.remove();
         articlePreview.appendChild(popout);
-        shareButton.addEventListener("click",(event)=>{
+        shareButton.addEventListener("click",()=>{
             popout.classList.toggle('hidden');
             shareButton.classList.toggle('share-icon-container-active');
             shareButton.querySelector('.share-icon-active').classList.toggle('hidden');
