@@ -176,7 +176,6 @@ body{
     .popout{
         z-index: 1;
         flex: 1;
-        justify-self: space-around;
         display: flex;
         gap: 1rem;
         align-items: center;
